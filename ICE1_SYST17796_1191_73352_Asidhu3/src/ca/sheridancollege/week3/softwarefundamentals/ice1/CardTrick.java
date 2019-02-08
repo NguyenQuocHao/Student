@@ -41,6 +41,12 @@ public class CardTrick {
         userCard.setValue(uValue);
         userCard.setSuit(uSuit);
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(8);
+        luckyCard.setSuit("Hearts");
+        System.out.println("Lucky card's value: "+luckyCard.getValue());
+        System.out.println("Lucky card's suit: "+luckyCard.getSuit());
+        
         
         for (int i=0; i<magicHand.length;i++){      //Search through magicHand array
             if (userCard.getValue()==magicHand[i].getValue() && userCard.getSuit().equals(magicHand[i].getSuit())){
@@ -52,9 +58,7 @@ public class CardTrick {
             }
         }
      
-     Card luckyCard = new Card();
-     luckyCard.setValue(8);
-     luckyCard.setSuit("Hearts");
+     
         
     }
 
