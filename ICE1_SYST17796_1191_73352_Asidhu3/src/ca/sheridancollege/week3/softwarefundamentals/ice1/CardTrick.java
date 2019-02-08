@@ -51,6 +51,10 @@ public class CardTrick {
                 System.out.println("Your card doesn't match with "+magicHand[i]);
             }
         }
+     
+     Card luckyCard = new Card();
+     luckyCard.setValue(8);
+     luckyCard.setSuit("Hearts");
         
     }
 
