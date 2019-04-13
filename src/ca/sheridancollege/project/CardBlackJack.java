@@ -32,6 +32,6 @@ public class CardBlackJack extends Card {
 
     @Override
     public String toString(){
-        return "";
+        return getValue()+" of "+getSuit();
     }
 }
