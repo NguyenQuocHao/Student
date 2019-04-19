@@ -1,4 +1,4 @@
-/*
+    /*
  * Group member: Hao, Bradon, Priya
  This class moderator: Hao
  */
@@ -32,6 +32,9 @@ public class GameBlackJack extends Game {
 
     @Override
     public void play() {
+        GroupOfCards deckOfCard = new GroupOfCards(52);
+        deckOfCard.readyAllCards();
+        System.out.println(deckOfCard);
         System.out.println("Please enter dealer's name: ");
         type = inp.nextLine();
         DealerBlackJack dealer = new DealerBlackJack(type);
