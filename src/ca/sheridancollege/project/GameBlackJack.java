@@ -42,23 +42,7 @@ public class GameBlackJack extends Game {
     public static void hitDealer(DealerBlackJack player, int amount) {
         player.dealCard(deck.dealCard(amount));
     }
-
-    /**
-     * Ask if there should be a next round
-     *
-     * @return the users response to the next round as true or false
-     */
-    public boolean nextRound() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("--------------------");
-        System.out.println("Would you like to play again?");
-        System.out.println("[1] Yes");
-        System.out.println("Enter any other value to quit!");
-        dealer.clearHand();
-        player.clearHand();
-        int input = in.nextInt();
-        return input == 1;
-    }
+  
 
     /**
      * Plays the game through a loop
@@ -85,13 +69,30 @@ public class GameBlackJack extends Game {
         }
     }
 
+      /**
+     * Ask if there should be a next round
+     *
+     * @return the users response to the next round as true or false
+     */
+    public boolean nextRound() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("--------------------");
+        System.out.println("Would you like to play again?");
+        System.out.println("[1] Yes");
+        System.out.println("Enter any other value to quit!");
+        dealer.clearHand();
+        player.clearHand();
+        String input = in.next();
+        return input.equals("1");
+    }
+    
     /**
      * Pays out the players bets
      */
     public void payOut() {
         if (player.getBet() > 0) {
             if (lastWinner.equals(player)) {
-                System.out.println("You won: " + (player.getBet() * 2));
+                System.out.println("Your wallet: " + (player.getBet() * 2));
                 player.setWalletBalance(player.getBet() * 2);
             } else {
                 System.out.println("You lost the bet!");
@@ -121,7 +122,7 @@ public class GameBlackJack extends Game {
             System.out.println("You lost!");
             lastWinner = dealer;
         } else {
-            System.out.println("The dealer had " + dealer.calculateHand());
+            System.out.println("The dealer had " + dealer.calculateHand());          
             System.out.println("You had " + player.calculateHand());
             System.out.println("You won!");
             lastWinner = player;

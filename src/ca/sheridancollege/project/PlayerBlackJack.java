@@ -13,14 +13,13 @@ import java.util.Scanner;
  */
 public class PlayerBlackJack extends Player {
 
-    private int wallet;
+    private int wallet=100;
     private HandOfCards cards;
     private int bet = 0;
 
     public PlayerBlackJack(String name) {
         super(name);
         setPlayerID(name + Math.random());
-        wallet = 100;
         cards = new HandOfCards(2);
     }
 
