@@ -5,6 +5,7 @@
  */
 package ca.sheridancollege.project;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -75,6 +76,7 @@ public class PlayerBlackJack extends Player {
                     System.out.println("It's your turn!");
                     System.out.println("Your cards equal: " + calculateHand());
                     System.out.println("Your wallet balance is: " + wallet);
+                    System.out.println("Your wallet bet is: " + bet);
                     System.out.println("[1] Hit");
                     System.out.println("[2] Stand");
                     System.out.println("[3] Place Bet");
@@ -110,6 +112,7 @@ public class PlayerBlackJack extends Player {
                     } catch (NumberFormatException e) {
                         System.out.println("Invalid bet amount!");
                     }
+                    
                     status = 0;
                     break;
                 default:

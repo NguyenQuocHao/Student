@@ -59,6 +59,7 @@ public class GameBlackJack extends Game {
             started = true;
         }
         while (started == true) {
+            player.setBet(0);
             player.dealCard(deck.dealCard(2));
             player.play();
             dealer.dealCard(deck.dealCard(2));
@@ -92,13 +93,15 @@ public class GameBlackJack extends Game {
     public void payOut() {
         if (player.getBet() > 0) {
             if (lastWinner.equals(player)) {
-                System.out.println("Your wallet: " + (player.getBet() * 2));
-                player.setWalletBalance(player.getBet() * 2);
-            } else {
+                player.setWalletBalance(player.getWalletBalance()+player.getBet()*2);
+                System.out.println("Your wallet: " + player.getWalletBalance());
+                
+            } else{
                 System.out.println("You lost the bet!");
+                System.out.println("Your wallet: " + player.getWalletBalance());
             }
         } else {
-            System.out.println("You didn't place a bet that time!");
+            System.out.println("You didn't place a bet that time! No money earned or lost.");
         }
     }
 
@@ -128,5 +131,4 @@ public class GameBlackJack extends Game {
             lastWinner = player;
         }
     }
-
 }
