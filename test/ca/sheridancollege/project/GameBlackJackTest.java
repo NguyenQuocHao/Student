@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  * @author nguyen
  */
 public class GameBlackJackTest {
-    GameBlackJack instance = new GameBlackJack("TEST");
+    GameBlackJack game = new GameBlackJack("TEST");
     PlayerBlackJack player = PlayerBlackJackTest.player;
     public GameBlackJackTest() {
     }
@@ -48,14 +48,13 @@ public class GameBlackJackTest {
        
     }
     @Test
-    public void tesHitPlayerBad() {
+    public void testHitPlayerBad() {
         GameBlackJack.hitPlayer(player, 100);
        
     }
     @Test
-    public void tesHitPlayerBoundary() {
+    public void testHitPlayerBoundary() {
         GameBlackJack.hitPlayer(player, 52);
-       
     }
     
 }
