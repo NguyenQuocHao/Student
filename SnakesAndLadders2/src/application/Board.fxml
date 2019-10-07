@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BoardController">
+   <children>
+      <TextField fx:id="rollTxt" editable="false" layoutX="19.0" layoutY="539.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="btnRoll" layoutX="19.0" layoutY="499.0" mnemonicParsing="false" text="Roll Dice" />
+      <ImageView fitHeight="454.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../board.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="220.0" fitWidth="79.0" layoutX="207.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" rotate="14.0">
+         <image>
+            <Image url="@../../ladder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="104.0" layoutX="326.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+         <image>
+            <Image url="@../../ladder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="185.0" fitWidth="85.0" layoutX="432.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" rotate="-34.8">
+         <image>
+            <Image url="@../../png-snakes-and-ladders-cartoon-snakes-pictures-1549183-600.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="86.0" layoutX="109.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" rotate="26.6">
+         <image>
+            <Image url="@../../png-snakes-and-ladders-cartoon-snakes-pictures-1549183-600.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg1" fitHeight="45.0" fitWidth="56.0" layoutX="10.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg1" fitHeight="45.0" fitWidth="54.0" layoutX="62.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg3" fitHeight="45.0" fitWidth="56.0" layoutX="246.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg2" fitHeight="45.0" fitWidth="56.0" layoutX="125.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg14" fitHeight="45.0" fitWidth="56.0" layoutX="125.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg15" fitHeight="45.0" fitWidth="56.0" layoutX="1.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg6" fitHeight="45.0" fitWidth="56.0" layoutX="482.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg7" fitHeight="45.0" fitWidth="56.0" layoutX="359.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg8" fitHeight="45.0" fitWidth="56.0" layoutX="246.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg9" fitHeight="45.0" fitWidth="56.0" layoutX="125.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg10" fitHeight="45.0" fitWidth="56.0" layoutX="1.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg4" fitHeight="45.0" fitWidth="56.0" layoutX="395.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg5" fitHeight="45.0" fitWidth="56.0" layoutX="482.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg20" fitHeight="45.0" fitWidth="56.0" layoutX="482.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg19" fitHeight="45.0" fitWidth="56.0" layoutX="359.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg18" fitHeight="45.0" fitWidth="56.0" layoutX="243.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg17" fitHeight="45.0" fitWidth="56.0" layoutX="121.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg16" fitHeight="45.0" fitWidth="56.0" layoutX="1.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg11" fitHeight="45.0" fitWidth="56.0" layoutX="482.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg12" fitHeight="45.0" fitWidth="56.0" layoutX="368.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenImg13" fitHeight="45.0" fitWidth="56.0" layoutX="246.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnA.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg17" fitHeight="45.0" fitWidth="54.0" layoutX="184.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg16" fitHeight="45.0" fitWidth="54.0" layoutX="62.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg11" fitHeight="45.0" fitWidth="54.0" layoutX="536.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg12" fitHeight="45.0" fitWidth="54.0" layoutX="422.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg13" fitHeight="45.0" fitWidth="54.0" layoutX="300.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg14" fitHeight="45.0" fitWidth="54.0" layoutX="184.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg15" fitHeight="45.0" fitWidth="54.0" layoutX="62.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg6" fitHeight="45.0" fitWidth="54.0" layoutX="536.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg7" fitHeight="45.0" fitWidth="54.0" layoutX="422.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg8" fitHeight="45.0" fitWidth="54.0" layoutX="300.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg9" fitHeight="45.0" fitWidth="54.0" layoutX="179.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg10" fitHeight="45.0" fitWidth="54.0" layoutX="62.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg5" fitHeight="45.0" fitWidth="54.0" layoutX="536.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg4" fitHeight="45.0" fitWidth="54.0" layoutX="428.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg3" fitHeight="45.0" fitWidth="54.0" layoutX="300.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg2" fitHeight="45.0" fitWidth="54.0" layoutX="184.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg20" fitHeight="45.0" fitWidth="54.0" layoutX="536.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg19" fitHeight="45.0" fitWidth="54.0" layoutX="422.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueImg18" fitHeight="45.0" fitWidth="54.0" layoutX="300.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pawnB.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerTurn" layoutX="17.0" layoutY="469.0" prefHeight="17.0" prefWidth="143.0" />
+      <Label layoutX="256.0" layoutY="516.0" text="Last Player move" />
+      <TextArea fx:id="lastTurn" editable="false" layoutX="179.0" layoutY="542.0" prefHeight="45.0" prefWidth="260.0" wrapText="true" />
+   </children>
+</AnchorPane>
