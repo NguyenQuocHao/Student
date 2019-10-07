@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <TextField fx:id="inp" layoutX="523.0" layoutY="216.0" />
+      <Text layoutX="568.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your input:" />
+      <ProgressBar layoutX="523.0" layoutY="279.0" prefHeight="17.0" prefWidth="149.0" progress="0.0" />
+      <Text layoutX="534.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Download speed:" />
+      <Text layoutX="534.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time remaining:" />
+   </children>
+</AnchorPane>
